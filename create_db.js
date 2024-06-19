@@ -14,7 +14,7 @@ async function createDatabaseAndTables() {
     try {
         await connection.query(`
             CREATE TABLE IF NOT EXISTS private_individuals (
-                id INT NOT NULL,
+                id INT NOT NULL AUTO_INCREMENT,
                 first_name VARCHAR(45) NULL,
                 second_name VARCHAR(45) NULL,
                 patronymic VARCHAR(45) NULL,
